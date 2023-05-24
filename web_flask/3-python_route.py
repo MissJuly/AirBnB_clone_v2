@@ -21,6 +21,7 @@ def c_text(text):
     return "C {}".format(txt)
 
 
+@app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def pycool(text="is cool"):
     txt = text.replace('_', ' ')
